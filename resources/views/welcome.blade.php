@@ -290,15 +290,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const icon = el.querySelector('i');
     const text = el.querySelector('p');
 
-    icon.classList.remove('text-muted','text-success','text-warning');
-    text.classList.remove('text-muted','text-success','text-warning');
+    icon.classList.remove('text-muted','text-success','text-warning','text-primary');
+    text.classList.remove('text-muted','text-success','text-warning','text-primary');
 
     if (state === 'done') {
       icon.classList.add('text-success');
       text.classList.add('text-success');
     } else if (state === 'current') {
-      icon.classList.add('text-warning');
-      text.classList.add('text-warning');
+      icon.classList.add('text-primary');  // 🔵 warna biru
+      text.classList.add('text-primary');  // 🔵 warna biru
     } else {
       icon.classList.add('text-muted');
       text.classList.add('text-muted');
@@ -393,8 +393,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Tentang Kami</h2>
+        <p>SIGAP Sosial adalah sebuah platform digital yang didesain untuk menjadi jembatan antara masyarakat dan lembaga penyedia layanan sosial. 
+          Nama SIGAP sendiri merupakan singkatan dari Sistem Informasi Gerakan Aduan Pelayanan Sosial. Kami hadir untuk memfasilitasi setiap individu dalam menyampaikan aduan, masukan, atau permintaan terkait pelayanan sosial, memastikan setiap suara didengar dan setiap permasalahan ditangani dengan responsif.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -402,32 +403,27 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="row gy-4">
 
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-            <p class="who-we-are">Who We Are</p>
-            <h3>Unleashing Potential with Creative Strategy</h3>
+            <p class="who-we-are">Siapakah kita?</p>
+            <h3>SIGAP Sosial: Menjawab Tantangan Sosial dengan Solusi Digital</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Kami adalah penggerak di balik SIGAP Sosial, sebuah tim yang berdedikasi untuk menciptakan perubahan positif di masyarakat. Kami percaya bahwa setiap orang berhak mendapatkan akses yang adil terhadap pelayanan sosial, dan teknologi adalah alat yang kuat untuk mewujudkannya.
+              Misi kami adalah menjembatani kesenjangan antara masyarakat yang membutuhkan dan lembaga penyedia layanan. Kami merancang platform ini untuk memberikan suara kepada mereka yang sering kali tidak terdengar, memastikan setiap aduan ditangani, dan setiap permasalahan sosial mendapat perhatian yang layak.
             </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul>
-            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            <a href="/" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
 
           <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
               <div class="col-lg-6">
-                <img src="assets/img/about-company-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/tagana.jpg" class="img-fluid" alt="">
               </div>
               <div class="col-lg-6">
                 <div class="row gy-4">
                   <div class="col-lg-12">
-                    <img src="assets/img/about-company-2.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/dwpdinsos.jpg" class="img-fluid" alt="">
                   </div>
                   <div class="col-lg-12">
-                    <img src="assets/img/about-company-3.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/kursiroda.jpg" class="img-fluid" alt="">
                   </div>
                 </div>
               </div>
