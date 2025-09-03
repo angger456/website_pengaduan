@@ -17,10 +17,10 @@
 
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
         <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/gedung-dinsos.png" alt="">
+          <img src="assets/img/carrousel1.jpg" alt="">
           <div class="carousel-container">
             <h2 style="text-align:center;">Sistem Informasi Gerakan Aduan Pelayanan Sosial</h2>
-            <p style="text-align:center;">Sampaikan keluhan, saran, dan pengaduan Anda dengan mudah melalui sistem ini. Kami hadir untuk mendengar dan menindaklanjuti permasalahan sosial di sekitar Anda.</p>
+            <p style="text-align:center;">PANTAU ADUAN, PASTIKAN TINDAKAN.</p>
             <a href="#call-to-action" class="btn-get-started">Lapor Sekarang!</a>
             <a href="#cek-pengaduan" class="btn-get-started">Cek Status Lapor</a>
           </div>
@@ -394,8 +394,10 @@ document.addEventListener("DOMContentLoaded", function() {
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Tentang Kami</h2>
-        <p>SIGAP Sosial adalah sebuah platform digital yang didesain untuk menjadi jembatan antara masyarakat dan lembaga penyedia layanan sosial. 
-          Nama SIGAP sendiri merupakan singkatan dari Sistem Informasi Gerakan Aduan Pelayanan Sosial. Kami hadir untuk memfasilitasi setiap individu dalam menyampaikan aduan, masukan, atau permintaan terkait pelayanan sosial, memastikan setiap suara didengar dan setiap permasalahan ditangani dengan responsif.</p>
+        <p>SIGAP SOSIAL (Sistem Informasi Gerakan Aduan Pelayanan Sosial) adalah inovasi digital yang dirancang untuk meningkatkan efektivitas, transparansi, dan akuntabilitas 
+          layanan publik di bidang kesejahteraan sosial bagi PPKS (Pemerlu Pelayanan Kesejahteraan Sosial). Aplikasi ini hadir sebagai jawaban atas kebutuhan masyarakat 
+          untuk memperoleh pelayanan yang cepat, tepat, dan mudah diakses, sekaligus mendukung transformasi digital di lingkungan Dinas Sosial, Pemberdayaan Perempuan dan 
+          Perlindungan Anak.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
