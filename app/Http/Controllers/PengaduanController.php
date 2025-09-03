@@ -21,6 +21,7 @@ class PengaduanController extends Controller
         $validated = $request->validate([
             'nama_pengadu' => 'required|string|max:100',
             'nik' => 'required|digits:16',
+            'no_hp'        => 'required|numeric|digits_between:10,15',
             'kecamatan' => 'required|string|max:100',
             'kelurahan' => 'required|string|max:100',
             'rt' => 'required|string|max:5',
@@ -46,6 +47,7 @@ class PengaduanController extends Controller
         $pengaduan = Pengaduan::create([
             'nama_pengadu' => $request->nama_pengadu,
             'nik'          => $request->nik,
+            'no_hp'        => $request->no_hp,
             'bidang'       => $request->bidang,
             'kecamatan'    => $request->kecamatan,
             'kelurahan'    => $request->kelurahan,

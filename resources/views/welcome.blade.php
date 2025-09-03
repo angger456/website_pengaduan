@@ -106,6 +106,14 @@
                 <input type="text" class="form-control" id="nik" name="nik" maxlength="16" required>
                 </div>
 
+                <!-- Nomor HP WhatsApp -->
+                <div class="mb-3 text-start">
+                  <label for="no_hp" class="form-label">Nomor HP WhatsApp</label>
+                  <input type="tel" class="form-control" id="no_hp" name="no_hp"
+                        pattern="[0-9]*" inputmode="numeric" required
+                        maxlength="15">
+                </div>
+
                 <!-- Kecamatan & Kelurahan -->
                 <div class="row">
                 <div class="col-md-6 mb-3 text-start">

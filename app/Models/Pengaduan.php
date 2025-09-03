@@ -15,6 +15,7 @@ class Pengaduan extends Model
     protected $fillable = [
         'nama_pengadu',
         'nik',
+        'no_hp',
         'bidang',
         'kecamatan',
         'kelurahan',

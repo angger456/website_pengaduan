@@ -198,6 +198,7 @@
                                                     <div class="col-md-8">
                                                         <p><strong>Nama Pengadu:</strong> {{ $item->nama_pengadu }}</p>
                                                         <p><strong>NIK:</strong> {{ $item->nik }}</p>
+                                                        <p><strong>NO HP WhatsApp:</strong> {{ $item->no_hp }}</p>
                                                         <p><strong>Kecamatan:</strong> {{ $item->kecamatan }}</p>
                                                         <p><strong>Judul:</strong> {{ $item->judul }}</p>
                                                         <p><strong>Bidang:</strong> {{ $item->bidang }}</p>
