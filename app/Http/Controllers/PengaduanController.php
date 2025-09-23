@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Pengaduan;
 use App\Models\PengaduanTindaklanjut;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 
 class PengaduanController extends Controller
@@ -192,4 +193,27 @@ class PengaduanController extends Controller
             'progressLinjamsos' => Pengaduan::progressByBidangAndStatus('linjamsos'),
         ]);
     }
+
+public function previewPdf()
+    {
+        $data = [
+            'judul'            => 'Ringkasan Bidang',                     // <-- pastikan ada
+            'tanggal'          => now()->format('d-m-Y'),
+
+            'countRehsos'      => Pengaduan::countByBidang('rehsos'),
+            'countPPKG'        => Pengaduan::countByBidang('ppkg'),
+            'countDayasos'     => Pengaduan::countByBidang('dayasos'),
+            'countLinjamsos'   => Pengaduan::countByBidang('linjamsos'),
+
+            'progressRehsos'   => Pengaduan::progressByBidangAndStatus('rehsos'),
+            'progressPPKG'     => Pengaduan::progressByBidangAndStatus('ppkg'),
+            'progressDayasos'  => Pengaduan::progressByBidangAndStatus('dayasos'),
+            'progressLinjamsos'=> Pengaduan::progressByBidangAndStatus('linjamsos'),
+        ];
+
+        $pdf = Pdf::loadView('ringkasan_pdf', $data)->setPaper('a4', 'portrait');
+
+        return $pdf->stream('ringkasan-bidang.pdf');
+    }
+
 }

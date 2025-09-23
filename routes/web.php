@@ -76,6 +76,11 @@ Route::get('/cek-status/{id}', [PengaduanController::class, 'cekStatus'])->name(
 //progres
 Route::get('/dashboard_admin', [PengaduanController::class, 'dashboard'])->name('admin.dashboard');
 
+// Preview PDF Ringkasan Bidang
+Route::get('/dashboard_admin/preview-pdf',
+    [PengaduanController::class, 'previewPdf']
+)->name('dashboard.preview.pdf');
+
 
 
 

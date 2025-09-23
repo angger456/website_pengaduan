@@ -157,6 +157,14 @@
                     <small class="text-light">Format: JPG, PNG, PDF. Maksimal 5 MB per file.</small>
                 </div>
 
+                <!-- Persetujuan Kerahasiaan -->
+                <div class="form-check mb-4 text-start">
+                    <input class="form-check-input" type="checkbox" id="persetujuan" name="persetujuan" required>
+                    <label class="form-check-label text-danger fw-bold" for="persetujuan">
+                        Seluruh data yang Anda input dalam aplikasi ini akan dijamin kerahasiaannya, 
+                        tidak akan disalahgunakan, dan hanya dapat diakses oleh admin resmi dari Dinas Sosial P3A.
+                    </label>
+                </div>
 
                 <!-- Tombol Submit -->
                 <button type="submit" class="btn btn-success w-100">Kirim Pengaduan</button>
@@ -184,9 +192,6 @@
                     });
                 </script>
             @endif
-
-
-
 
             </div>
         </div>

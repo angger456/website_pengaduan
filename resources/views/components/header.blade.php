@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
 <!-- Favicons -->
-<link rel="icon" href="assets/img/iconsigap.png" type="image/png">
-<link rel="shortcut icon" href="assets/img/iconsigap.png" type="image/png">
+<link rel="icon" href="assets/img/iconsigapfix.png" type="image/png">
+<link rel="shortcut icon" href="assets/img/iconsigapfix.png" type="image/png">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">

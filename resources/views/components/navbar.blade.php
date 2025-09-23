@@ -1,5 +1,5 @@
 <a href="/" class="logo d-flex align-items-center">
-    <img src="assets/img/logosos2.png" alt="Logo SIGAP" 
+    <img src="assets/img/logosos3.png" alt="Logo SIGAP" 
         style="height: 90px; max-height: 90px; width: auto;">
 </a>
 
