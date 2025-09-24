@@ -6,6 +6,10 @@
                      Berikut adalah data pengaduan masyarakat. Gunakan tombol aksi untuk melihat detail atau menghapus data.
                     </p>
 
+                    <a href="" class="btn btn-success btn-sm">
+                        <i class="fas fa-file-excel"></i> Export Excel
+                    </a>
+
                     <!-- DataTables Example -->
                     <div class="card shadow mb-4">
                         <div class="card-body">
