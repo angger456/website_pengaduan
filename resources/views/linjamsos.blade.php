@@ -76,6 +76,7 @@
                                                 <form action="{{ route('pengaduan.destroy', $item->id) }}" method="POST" style="display:inline;">
                                                     @csrf
                                                     @method('DELETE')
+                                                    <input type="hidden" name="halaman" value="linjamsos"> {{-- ubah sesuai halaman: ppkg / rehsos / linjamsos / dayasos --}}
                                                     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus?')">Hapus</button>
                                                 </form>
 

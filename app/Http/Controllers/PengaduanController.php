@@ -66,15 +66,23 @@ class PengaduanController extends Controller
         ]);
     }
 
-    public function destroy($id)
+    public function destroy(Request $request, $id)
     {
         $pengaduan = Pengaduan::find($id);
         if (!$pengaduan) {
             return redirect()->back()->with('error', 'Data tidak ditemukan');
         }
+
         $pengaduan->delete();
-        return redirect()->route('pengaduan.index')->with('success', 'Data berhasil dihapus');
+
+        // Ambil halaman asal dari input hidden
+        $halaman = $request->input('halaman', 'pengaduan'); // default ke rehsos (pengaduan.index)
+
+        return redirect()
+            ->route($halaman . '.index')
+            ->with('success', 'Data berhasil dihapus');
     }
+
 
     public function updateStatus(Request $request, $id)
     {
