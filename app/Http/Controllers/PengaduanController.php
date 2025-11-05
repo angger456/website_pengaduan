@@ -78,9 +78,9 @@ class PengaduanController extends Controller
         // Ambil halaman asal dari input hidden
         $halaman = $request->input('halaman', 'pengaduan'); // default ke rehsos (pengaduan.index)
 
-        return redirect()
-            ->route($halaman . '.index')
-            ->with('success', 'Data berhasil dihapus');
+        // Redirect ke URL dengan prefix /public/
+        return redirect(url('public/' . $halaman))
+        ->with('success', 'Data berhasil dihapus');
     }
 
 
