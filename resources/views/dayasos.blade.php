@@ -78,6 +78,7 @@
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus?')">Hapus</button>
                                                 </form>
+                                                @endforeach
 
                                                 <!-- notif sukses -->
                                                 @if(session('success'))
@@ -94,7 +95,7 @@
                                             </td>
 
                                             </tr>
-                                        @endforeach
+                                        
                                     </tbody>
                                 </table>
 

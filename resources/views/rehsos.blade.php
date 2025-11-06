@@ -73,11 +73,13 @@
                                                 @endif
 
                                                 <!-- Tombol Hapus -->
-                                                <form action="{{ route('pengaduan.destroy', $item->id) }}" method="POST" style="display:inline;">
+                                                <form action="{{ route('pengaduan.destroy', $item->id) }}" method="POST">
                                                     @csrf
                                                     @method('DELETE')
+                                                    <input type="hidden" name="halaman" value="rehsos">
                                                     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus?')">Hapus</button>
                                                 </form>
+                                                @endforeach
 
                                                 <!-- notif sukses -->
                                                 @if(session('success'))
@@ -92,9 +94,8 @@
                                                 </script>
                                                 @endif
                                             </td>
-
                                             </tr>
-                                        @endforeach
+                                        
                                     </tbody>
                                 </table>
 
