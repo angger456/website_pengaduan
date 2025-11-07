@@ -115,7 +115,7 @@
                                                 <p><strong>Deskripsi:</strong> {{ $item->deskripsi }}</p>
 
                                                 <hr>
-                                                <h6>Log Tindak Lanjut</h6>
+                                                <h6>Log/Riwayat Tindak Lanjut</h6>
                                                 @forelse($item->tindaklanjut as $log)
                                                     <div class="alert alert-secondary mb-2">
                                                         <small>{{ $log->created_at->format('d/m/Y H:i') }}</small><br>
